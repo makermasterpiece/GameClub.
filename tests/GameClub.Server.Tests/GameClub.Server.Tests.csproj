@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.11" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\src\GameClub.Client\Services\Playnite\PlayniteSessionBridge.cs" Link="Client\PlayniteSessionBridge.cs" />
+    <Compile Include="..\..\src\GameClub.Client\Services\Playnite\PlayniteConfigurationReader.cs" Link="Client\PlayniteConfigurationReader.cs" />
+    <Compile Include="..\..\src\GameClub.Client\Services\Playnite\PlayniteProcessAdapter.cs" Link="Client\PlayniteProcessAdapter.cs" />
+    <ProjectReference Include="..\..\src\GameClub.Agent\GameClub.Agent.csproj" />
+    <ProjectReference Include="..\..\src\GameClub.Domain\GameClub.Domain.csproj" />
+    <ProjectReference Include="..\..\src\GameClub.Infrastructure\GameClub.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\GameClub.Server\GameClub.Server.csproj" />
+  </ItemGroup>
+</Project>

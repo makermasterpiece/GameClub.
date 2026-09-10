@@ -1,0 +1,6 @@
+Id: GameClub.LibraryExporter_830ab3db-51e1-40e0-99a0-a3821d6aaf7a
+Name: GameClub Library Exporter
+Author: GameClub
+Version: 0.1.0
+Module: GameClub.LibraryExporter.psm1
+Type: Script
